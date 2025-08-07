@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+.car-offer {
+  padding: 40px;
+  background-color: rgb(253, 252, 252);
+  max-width: 1620px;
+  margin: 40px auto;
+  height: 500px;
+  border-radius: 12px;
+  background-image: url("bg-city.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.car-offer__breadcrumbs {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.car-offer__link {
+  color: #666;
+  text-decoration: none;
+}
+
+.car-offer__title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.car-offer__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.car-offer__info {
+  flex: 1 1 45%;
+}
+
+.car-offer__price-box {
+  margin-bottom: 20px;
+}
+
+.car-offer__old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 18px;
+  display: block;
+}
+
+.car-offer__new-price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.car-offer__discount {
+  background-color: #c00;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.car-offer__benefits {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.car-offer__benefit {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: #fff;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.car-offer__benefit-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.car-offer__car {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.car-offer__image {
+  max-width: 60%;
+  height: auto;
+  margin-top: 20px;
+  margin-right: 400px;
+}
+
+.car-offer__color-label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.car-offer__colors {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.car-offer__color {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.car-offer__color--active {
+  border-color: #c00;
+}
+
+.car-offer__form-box {
+  background-color: #f3f2f2;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.car-offer__form-info {
+  flex: 1 1 200px;
+}
+
+.car-offer__form-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.car-offer__form-subtitle {
+  font-size: 14px;
+  color: #c00;
+  margin-top: 4px;
+}
+
+.car-offer__form {
+  flex: 1 1 500px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.car-offer__input {
+  flex: 1 1 200px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.car-offer__button {
+  background-color: #c00;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.car-offer__button:hover {
+  background-color: #a00;
+}
+
+.car-offer__privacy {
+  font-size: 12px;
+  color: #777;
+  flex-basis: 100%;
+  margin-top: 10px;
+}
+
+.car-offer__privacy-link {
+  color: #222;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .car-offer {
+    padding: 20px;
+    height: auto;
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  .car-offer__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .car-offer__info,
+  .car-offer__car {
+    flex: 1 1 100%;
+    text-align: left;
+  }
+
+  .car-offer__image {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .car-offer__benefit {
+    width: 100%;
+  }
+
+  .car-offer__form-box {
+    position: static;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+    margin-top: 20px;
+  }
+
+  .car-offer__form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .car-offer__input,
+  .car-offer__button {
+    width: 100%;
+  }
+
+  .car-offer__button {
+    text-align: center;
+  }
+
+  .car-offer__form-title {
+    font-size: 16px;
+  }
+
+  .car-offer__form-subtitle {
+    font-size: 13px;
+  }
+
+  .car-offer__privacy {
+    font-size: 11px;
+    text-align: center;
+  }
+}

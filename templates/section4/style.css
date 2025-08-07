@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.credit {
+  padding: 40px 20px;
+}
+
+.credit__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.credit__title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.credit__advantages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.credit__item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 150px;
+}
+
+.credit__item--highlight {
+  background-color: #fff4f4;
+}
+
+.credit__image {
+  width: 100%;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.credit__text {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.credit__number {
+  font-size: 36px;
+  color: #d40000;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.credit__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.credit__conditions,
+.credit__docs {
+  flex: 1;
+  min-width: 280px;
+}
+
+.credit__subtitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.credit__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.credit__list-item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+}
+
+.credit__list-item::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: red;
+}
+@media (max-width: 768px) {
+  .credit__title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .credit__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .credit__text {
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .credit__number {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .credit__bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .credit__subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .credit__list-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .credit {
+    padding: 30px 15px;
+  }
+
+  .credit__title {
+    font-size: 20px;
+  }
+
+  .credit__item {
+    padding: 15px;
+    min-height: auto;
+  }
+
+  .credit__text {
+    font-size: 15px;
+  }
+
+  .credit__number {
+    font-size: 24px;
+  }
+
+  .credit__list-item {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+
+  .credit__list-item::before {
+    left: 0;
+  }
+}
