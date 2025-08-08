@@ -1,0 +1,452 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* FAVORITES */
+.favorites__sublink {
+  display: flex;
+  margin: 37px 0 20px;
+}
+
+.favorites__sublink a {
+  color: #737373;
+  font-size: 12px;
+}
+
+.favorites__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eff0f0;
+  position: relative;
+}
+
+.favorites__left {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+}
+
+.favorites__links-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.favorites__title {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.favorites__links1 {
+  padding: 10px 18px;
+  border-radius: 11px;
+  background-color: #ca0100;
+  color: white;
+}
+
+.favorites__links2 {
+  padding: 10px 18px;
+  border-radius: 11px;
+  background-color: #eff0f0;
+  color: black;
+}
+
+.favorites__links2 span {
+  color: #ca0100;
+}
+.favorites__links3 span {
+  color: #ca0100;
+}
+
+.favorites__links3 {
+  padding: 10px 18px;
+  border-radius: 11px;
+  background-color: #eff0f0;
+  color: black;
+}
+
+.favorites__right span {
+  font-weight: 700;
+}
+
+/*  NEWCARS */
+.newcars {
+  padding: 85px 0;
+}
+.newcars__title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+
+.newcars__card-wrapper1 {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+.newcars__card-wrapper2 {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+
+.newcars__card {
+  background-image: url(../../assets/images/favorites.newcars.city.img.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 20px 20px 60px;
+  border-radius: 25px;
+  max-width: 440px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.newcars__card-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newcars__card-title {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.newcars__card-offer-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 14px 0 21px;
+}
+
+.newcars__card-offer {
+  font-size: 13px;
+  display: inline-block;
+  background-color: #ca0100;
+  color: white;
+  font-weight: bold;
+  padding: 10px 25px 10px 20px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
+
+.newcars__card-benifit {
+  color: #ca0100;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.newcars__card-gift {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+
+.newcars__card-img {
+  background-color: black;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.newcars__card-img img {
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.newcars__card-gift-black {
+  font-size: 13px;
+}
+
+.newcars__card-gift-red {
+  font-size: 13px;
+  color: #ca0100;
+}
+
+.newcars__card-car {
+  max-width: 220px;
+}
+
+.newcars__card-inner {
+  display: flex;
+  align-items: end;
+}
+
+.newcars__card-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 19px;
+  align-items: center;
+}
+
+.newcars__card-price {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.newcars__card-text span {
+  font-weight: 700;
+}
+
+.newcars__card-button-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.newcars__card-button-red {
+  font-size: 14px;
+  padding: 15px 30px;
+  background-color: #ca0100;
+  border: 0;
+  color: white;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.newcars__card-button-black {
+  font-size: 14px;
+  padding: 15px 30px 15px 40px;
+  background-color: #262626;
+  border: 0;
+  color: white;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+  position: absolute;
+  top: 0;
+  left: 125px;
+  z-index: 2;
+}
+
+.newcars__card-button-gray {
+  font-size: 14px;
+  padding: 15px 40px;
+  background-color: #737373;
+  border: 0;
+  color: white;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+  position: absolute;
+  top: 0;
+  left: 210px;
+}
+
+/* RESPONSIV */
+@media (max-width: 1200px) {
+  .newcars__card-wrapper1 .newcars__card:last-child {
+    display: none;
+  }
+  .newcars__card {
+    padding: 20px 20px 140px;
+  }
+  .newcars__card-button-red {
+    width: 100%;
+    padding: 18px 0;
+    top: 8px;
+    left: 0;
+    z-index: 3;
+  }
+  .newcars__card-button-black {
+    width: 55%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 18px 30px 18px 40px;
+    top: 70px;
+    left: 0;
+    z-index: 2;
+  }
+  .newcars__card-button-gray {
+    width: 60%;
+    padding: 18px 40px;
+    top: 70px;
+    left: 150px;
+  }
+  .newcars__title {
+    display: none;
+  }
+}
+
+@media (max-width: 1020px) {
+  .favorites__links-wrapper {
+    position: absolute;
+    left: 0;
+    top: 120px;
+  }
+  .favorites__sublink {
+    display: none;
+  }
+  .favorites__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 870px) {
+  .newcars__card-car {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 850px) {
+  .newcars__card-price {
+    font-size: 20px;
+  }
+  .newcars__card-text {
+    font-size: 14px;
+  }
+  .newcars__card-button-gray {
+    left: 140px;
+  }
+}
+
+@media (max-width: 820px) {
+  .newcars__card-car {
+    max-width: 180px;
+  }
+  .newcars__card-button-gray {
+    left: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .favorites__title {
+    font-size: 30px;
+  }
+  .favorites__right {
+    font-size: 12px;
+    text-align: end;
+  }
+  .favorites__links-wrapper {
+    position: absolute;
+    left: 0;
+    top: 80px;
+  }
+  .newcars__card-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .newcars__card-wrapper1 {
+    flex-direction: column;
+  }
+  .newcars__card-wrapper2 {
+    flex-direction: column;
+  }
+  .newcars__card-car {
+    max-width: 220px;
+  }
+  .newcars__card-button-gray {
+    left: 160px;
+  }
+}
+
+@media (max-width: 520px) {
+  .favorites__wrapper {
+    gap: 50px;
+  }
+  .favorites__links-wrapper {
+    position: absolute;
+    left: 0;
+    top: 80px;
+  }
+}
+
+@media (max-width: 440px) {
+  .newcars__card-button-gray {
+    left: 150px;
+  }
+}
+
+@media (max-width: 430px) {
+  .favorites__links-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .favorites__links1,
+  .favorites__links2,
+  .favorites__links3 {
+    display: inline-block;
+  }
+  .favorites__links-wrapper {
+    position: absolute;
+    left: 0;
+    top: 90px;
+  }
+  .newcars__card-button-gray {
+    left: 140px;
+  }
+  .newcars__card-car {
+    max-width: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .newcars__card-button-gray {
+    left: 130px;
+  }
+  .newcars__card-car {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 385px) {
+  .newcars__card-button-gray {
+    left: 120px;
+  }
+  .newcars__card-car {
+    max-width: 170px;
+  }
+  .newcars__card-img {
+    padding: 6px;
+    border-radius: 20px;
+  }
+
+  .newcars__card-price {
+    font-size: 18px;
+  }
+  .newcars__card-text {
+    font-size: 12px;
+  }
+  .newcars__card-img img {
+    width: 90%;
+  }
+  .newcars__card-gift-black {
+    font-size: 9px;
+  }
+  .newcars__card-gift-red {
+    font-size: 9px;
+  }
+}
+@media (max-width: 350px) {
+  .newcars__card-button-gray {
+    left: 110px;
+  }
+  .newcars__card-car {
+    max-width: 150px;
+  }
+  .newcars__card-text {
+    font-size: 10px;
+  }
+}
