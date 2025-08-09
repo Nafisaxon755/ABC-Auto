@@ -9,5 +9,508 @@
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <section class="slider-section">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <div class="slide-content">
+                <span class="label">Осталось всего 10 авто!</span>
+                <h1>Грандиозная распродажа тестового парка!</h1>
+                <p>Узнай свою цену!</p>
+              </div>
+              <div class="slide-images">
+                <img
+                  src="./assets/images/rapid-entry-AVN 1.png"
+                  alt="Silver Sedan in the background"
+                  class="car car-back"
+                />
+                <img
+                  src="./assets/images/ext-front_tcm-3020-1767644 1.png"
+                  alt="White SUV in the middle"
+                  class="car car-middle"
+                />
+                <img
+                  src="./assets/images/rio_new 1.png"
+                  alt="Red Sedan in the front"
+                  class="car car-front"
+                />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-content">
+                <span class="label">Новое поступление!</span>
+                <h1>Встречайте модели 2024 года!</h1>
+                <p>Запишитесь на тест-драйв.</p>
+              </div>
+              <div class="slide-images">
+                <img
+                  src="./assets/images/ext-front_tcm-3020-1767644 1.png"
+                  alt="White SUV"
+                  class="car car-back"
+                />
+                <img
+                  src="./assets/images/rapid-entry-AVN 1.png"
+                  alt="Silver Sedan"
+                  class="car car-middle"
+                />
+                <img
+                  src="./assets/images/rio_new 1.png"
+                  alt="Red Sedan"
+                  class="car car-front"
+                />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-content">
+                <span class="label">Специальное предложение</span>
+                <h1>Выгодный кредит на все внедорожники</h1>
+                <p>Ставка от 0.1% годовых.</p>
+              </div>
+              <div class="slide-images">
+                <img
+                  src="./assets/images/rapid-entry-AVN 1.png"
+                  alt="Silver Sedan"
+                  class="car car-back"
+                />
+                <img
+                  src="./assets/images/rio_new 1.png"
+                  alt="Red Sedan"
+                  class="car car-middle"
+                />
+                <img
+                  src="./assets/images/ext-front_tcm-3020-1767644 1.png"
+                  alt="White SUV"
+                  class="car car-front"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn prev-btn" aria-label="Previous slide">
+            &#10094;
+          </button>
+          <button class="slider-btn next-btn" aria-label="Next slide">
+            &#10095;
+          </button>
+
+          <div class="pagination-container"></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <main class="app-container">
+        <section class="credit-calculator">
+          <h1 class="main-title">Заявка на автокредит</h1>
+
+          <div class="vehicle-selection">
+            <div class="select-wrapper">
+              <select>
+                <option>Марка</option>
+              </select>
+            </div>
+            <div class="select-wrapper">
+              <select>
+                <option>Модель</option>
+              </select>
+            </div>
+            <div class="select-wrapper">
+              <select>
+                <option>Комплектация</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calculator-grid">
+            <div class="calculator-left">
+              <div class="car-image-container">
+                <img
+                  src="./assets/images/150502082 1 1.png"
+                  alt="Car under a cover"
+                />
+              </div>
+              <div class="dual-sliders">
+                <div class="slider-group-vertical">
+                  <div class="slider-value-badge">0</div>
+                  <input type="range" min="0" max="100" value="0" />
+                  <label class="slider-label">Первоначальный взнос</label>
+                </div>
+                <div class="slider-group-vertical">
+                  <div class="slider-value-badge">0</div>
+                  <input type="range" min="0" max="100" value="100" />
+                  <label class="slider-label">Остаток по кредиту</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="calculator-right">
+              <div class="slider-group">
+                <div class="slider-header">
+                  <label class="slider-label">Сумма кредита, руб</label>
+                  <span class="slider-output">0</span>
+                </div>
+                <input type="range" min="0" max="3000000" value="450000" />
+                <div class="slider-ticks">
+                  <span>0</span>
+                  <span>500т</span>
+                  <span>800т</span>
+                  <span>1,1м</span>
+                  <span>1,4м</span>
+                  <span>1,7м</span>
+                  <span>2м</span>
+                  <span>2,3м</span>
+                  <span>2,7м</span>
+                  <span>3м</span>
+                </div>
+              </div>
+
+              <div class="slider-group">
+                <div class="slider-header">
+                  <label class="slider-label">Срок кредита, мес.</label>
+                  <span class="slider-output">6 мес.</span>
+                </div>
+                <input type="range" min="6" max="84" value="6" />
+                <div class="slider-ticks">
+                  <span>6</span>
+                  <span>12</span>
+                  <span>24</span>
+                  <span>36</span>
+                  <span>48</span>
+                  <span>60</span>
+                  <span>72</span>
+                  <span>84</span>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label class="input-label">Первоначальный взнос, руб</label>
+                <input type="text" value="0" class="text-input" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="cta-card">
+          <h2 class="cta-title">Получить выгоду</h2>
+          <p class="cta-amount">300 000 ₽</p>
+          <form class="cta-form">
+            <input type="text" placeholder="Ваше имя" class="form-input" />
+            <input type="tel" placeholder="Ваш телефон" class="form-input" />
+            <button type="submit" class="cta-button">
+              ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ
+            </button>
+          </form>
+          <p class="disclaimer">
+            Нажимая кнопку "Получить скидку" Вы даете согласие на обработку
+            своих персональных данных
+          </p>
+        </aside>
+      </main>
+    </div>
+    <div class="container">
+      <section class="partners-section">
+        <header class="section-header">
+          <h2 class="section-title">Банки-партнеры</h2>
+          <div class="nav-controls">
+            <button class="nav-button">
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 13L1 7L7 1"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="nav-button active">
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 13L7 7L1 1"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </header>
+        <div class="partners-grid">
+          <div class="partner-card">
+            <img
+              src="./assets/images/1280px-Sberbank 1.png"
+              alt="Логотип Альфа Страхование"
+            />
+          </div>
+          <div class="partner-card">
+            <img
+              src="./assets/images/1280px-Sberbank 1 (1).png"
+              alt="Логотип ВСК Страховой дом"
+            />
+          </div>
+          <div class="partner-card">
+            <img
+              src="./assets/images/1280px-Sberbank 1 (2).png"
+              alt="Логотип Совкомбанк Страхование"
+            />
+          </div>
+          <div class="partner-card">
+            <img
+              src="./assets/images/Group 3336.png"
+              alt="Логотип Росгосстрах"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <header class="section-header">
+          <h2 class="section-title">Нам доверяют</h2>
+          <div class="nav-controls">
+            <button class="nav-button">
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 13L1 7L7 1"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="nav-button active">
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 13L7 7L1 1"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </header>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="card-content">
+              <p class="review-source-title">Сайт отзывик</p>
+              <p class="review-source-subtitle">Название автосалона</p>
+            </div>
+            <footer class="card-footer">
+              <span class="recommend-percent">Рекомендуют 90%</span>
+              <div class="star-rating" aria-label="Rating: 4.5 out of 5 stars">
+                <span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star half-filled">★</span>
+              </div>
+              <div class="rating-badge">4.5</div>
+            </footer>
+          </article>
+          <article class="review-card">
+            <div class="card-content">
+              <p class="review-source-title">Сайт отзывик</p>
+              <p class="review-source-subtitle">Название автосалона</p>
+            </div>
+            <footer class="card-footer">
+              <span class="recommend-percent">Рекомендуют 90%</span>
+              <div class="star-rating" aria-label="Rating: 4.5 out of 5 stars">
+                <span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star half-filled">★</span>
+              </div>
+              <div class="rating-badge">4.5</div>
+            </footer>
+          </article>
+          <article class="review-card">
+            <div class="card-content">
+              <p class="review-source-title">Сайт отзывик</p>
+              <p class="review-source-subtitle">Название автосалона</p>
+            </div>
+            <footer class="card-footer">
+              <span class="recommend-percent">Рекомендуют 90%</span>
+              <div class="star-rating" aria-label="Rating: 4.5 out of 5 stars">
+                <span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star half-filled">★</span>
+              </div>
+              <div class="rating-badge">4.5</div>
+            </footer>
+          </article>
+          <article class="review-card">
+            <div class="card-content">
+              <p class="review-source-title">Сайт отзывик</p>
+              <p class="review-source-subtitle">Название автосалона</p>
+            </div>
+            <footer class="card-footer">
+              <span class="recommend-percent">Рекомендуют 90%</span>
+              <div class="star-rating" aria-label="Rating: 4.5 out of 5 stars">
+                <span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star half-filled">★</span>
+              </div>
+              <div class="rating-badge">4.5</div>
+            </footer>
+          </article>
+        </div>
+        <div class="review-widgets-container">
+          <article class="review-widget">
+            <div class="review-widget__source">
+              <div class="review-widget__info">
+                <img src="./assets/images/yandex-maps-logo 1.png" alt="" />
+                <p class="review-widget__dealership-name">
+                  Название автосалона
+                </p>
+              </div>
+            </div>
+            <div class="review-widget__details">
+              <p class="review-widget__recommend-text">Рекомендуют 90%</p>
+              <div
+                class="review-widget__star-rating"
+                aria-label="Rating: 4.5 out of 5 stars"
+              >
+                <span class="star star--filled">★</span>
+                <span class="star star--filled">★</span>
+                <span class="star star--filled">★</span>
+                <span class="star star--filled">★</span>
+                <span class="star star--half">★</span>
+              </div>
+            </div>
+            <div class="review-widget__badge">4.5</div>
+          </article>
+
+          <article class="review-widget">
+            <div class="review-widget__source">
+              <div class="review-widget__info">
+                <img src="./assets/images/Google_Maps_Logo 2.png" alt="" />
+                <p class="review-widget__dealership-name">
+                  Название автосалона
+                </p>
+              </div>
+            </div>
+            <div class="review-widget__details">
+              <p class="review-widget__recommend-text">Рекомендуют 90%</p>
+              <div
+                class="review-widget__star-rating"
+                aria-label="Rating: 4.1 out of 5 stars"
+              >
+                <span class="star star--filled">★</span>
+                <span class="star star--filled">★</span>
+                <span class="star star--filled">★</span>
+                <span class="star star--filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="review-widget__badge">4.1</div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    
+    <div class="container">
+        <section class="about-us-section">
+            <header class="about-us-header">
+                <h2 class="about-us-title">О компании</h2>
+                <p class="about-us-description">
+                    Мы располагаем огромной торговой площадкой более 5000 квадратных метров, у нас в наличии не менее 200 автомобилей как отечественного, так и иностранного производства. В штате автосалона «Альтера» работают настоящие профессионалы, которые знают особенности каждого конкретного автомобиля.
+                </p>
+            </header>
+            <div class="video-presentation">
+                <img src="./assets/images/Rectangle 122.png" alt="Команда профессионалов" class="video-presentation__thumbnail">
+                <a href="#" class="video-presentation__play-btn" aria-label="Воспроизвести видео">
+                    <span class="play-btn__icon"></span>
+                </a>
+            </div>
+        </section>
+    </div>
+    
+    <main class="page-content">
+      <header class="page-header">
+          <nav class="tabs-navigation">
+              <ul class="tabs-list">
+                  <li class="tab-item"><a href="#" class="tab-link active">Автосалон</a></li>
+                  <li class="tab-item"><a href="#" class="tab-link">Трейд-ин</a></li>
+                  <li class="tab-item"><a href="#" class="tab-link">Покупка</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <section class="about-section">
+          <h1 class="about-title">Об автосалоне АВС</h1>
+          <p class="about-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar auctor tellus, id volutpat dui dictum vitae. Sed ac mauris nisi. Maecenas quis sollicitudin dolor, eget molestie dolor. Vivamus sed magna euismod, iaculis eros vitae, vehicula justo. Ut id consequat risus, vitae accumsan ligula. Proin egestas odio sit amet laoreet vulputate. Suspendisse vitae vestibulum quam. Vivamus lectus justo, bibendum at laoreet vel, rhoncus nec sem. Phasellus at mollis magna, in bibendum massa. Praesent malesuada sit amet nibh ut vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla iaculis a orci sit amet iaculis. Nulla in magna posuere nunc pharetra faucibus. Phasellus id enim libero.
+          </p>
+      </section>
+
+      <section class="map-section">
+          <div class="map-wrapper">
+              <div class="contact-card">
+                  <ul class="contact-list">
+                      <li class="contact-item">
+                          <div class="contact-icon-wrapper">
+                              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5562 12.0229L14.522 14.0571C12.4497 12.9733 10.8875 11.4111 9.8037 9.33879L11.8379 7.3046C12.1481 6.99442 12.2464 6.5393 12.0911 6.13459L10.7499 2.61334C10.5369 2.06282 9.99128 1.70117 9.40228 1.70117H7.33333C6.70933 1.70117 6.16667 2.24384 6.22442 2.86498C6.67138 7.37346 8.58784 11.5317 11.751 14.6949C14.9142 17.8581 19.0724 19.7745 23.5809 20.2215C24.202 20.2792 24.7447 19.7366 24.7447 19.1126V17.0436C24.7447 16.4546 24.383 15.909 23.8325 15.696L20.3113 14.3548C19.9066 14.1995 19.4514 14.2978 19.1412 14.6079L17.2917 16.4574C17.2917 16.4574 16.5562 12.0229 16.5562 12.0229Z" fill="white"/></svg>
+                          </div>
+                          <div class="contact-info">
+                              <span>+7 (800) 551-94-31</span>
+                              <span>+7 (495) 292-18-67</span>
+                          </div>
+                      </li>
+                      <li class="contact-item">
+                          <div class="contact-icon-wrapper">
+                               <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.24 16.24L11 13V7H12.5V12.25L17 14.92L16.24 16.24Z" fill="white"/></svg>
+                          </div>
+                          <span class="contact-info">Ежедневно с 08:00 до 21:00</span>
+                      </li>
+                      <li class="contact-item">
+                          <div class="contact-icon-wrapper">
+                              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="white"/></svg>
+                          </div>
+                          <span class="contact-info">Россия, Москва, 38км МКАД, 6Бс1</span>
+                      </li>
+                  </ul>
+                  <a href="#" class="cta-button">КАК ДО НАС ДОБРАТЬСЯ</a>
+              </div>
+          </div>
+      </section>
+  </main>
+    <script src="script.js"></script>
+  </body>
 </html>
