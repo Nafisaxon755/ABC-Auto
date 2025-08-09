@@ -1,36 +1,35 @@
 .features {
-    padding: 40px 20px;
-    background-color: #ffffff;
+    padding: 60px 0;
 }
 
 .features__grid {
-    display: flex;
-    flex-wrap: wrap;
-    /* позволяет переносить элементы на новую строку */
-    justify-content: center;
-    /* выравнивание по центру */
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
+    gap: 40px 24px;
+    justify-items: center;
+    text-align: center;
 }
 
-.features__item {
-    flex: 1 1 200px;
-    /* позволяет карточке сжиматься и расширяться */
-    max-width: 150px;
+.features__item div {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 40px;
 }
 
 .features__icon {
-    margin-bottom: 31px;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.features__item img[src$="line.svg"] {
+    margin-right: -70px;
 }
 
 .features__text {
+    font-size: 16px;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #262626;
+    color: #000;
+    line-height: 1.3;
+    margin: 0;
 }
