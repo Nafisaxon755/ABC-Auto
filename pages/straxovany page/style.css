@@ -1,0 +1,377 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.container {
+max-width: 1420px;
+margin: 0 auto;
+padding: 0 16px; 
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.insurance {
+    padding-top: 20px;
+    background-image: url(./media/1\ 50502083.png);
+    background-repeat: no-repeat;
+}
+
+.sign{
+    width: 8px;
+    height: 5px;
+    color: #CA0100;
+}
+
+.catalog{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 50px;  
+    
+}
+
+.paragraph{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.card__wrapper{
+    display: flex;
+    gap: 60px;
+}
+
+
+.cards__wrap{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.card1{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card2{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.card3{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+
+.img__sign{
+    width: 38px;
+    height: 38px;
+}
+
+
+.card__wrapper{
+    display: flex;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+
+.card1{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+
+.img__sign{
+    width: 38px;
+    height: 38px;
+}
+
+
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1300px;
+    height: 170px;
+    border: 1px solid #E1E1E1;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    margin-top: 70px;
+}
+
+.cost{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #262626;
+}
+
+.button__wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+
+.bttn{
+   width: 320px;
+   height: 65px;
+   border: 1px solid #E1E1E1;
+   background-color: #EFF0F0;
+   border-radius: 5px;
+}
+
+
+.bttn__red{
+   width: 320px;
+   height: 65px;
+   border: 1px solid #CA0100;
+   background-color: #CA0100;
+   border-radius: 5px; 
+   font-size: 16px;
+   font-weight: 700;
+   color: #FFFFFF;
+}
+
+
+.bttn__small{
+    width: 167px;
+    height: 26px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #CA0100;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+.sale{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 130%;
+    color: #737373;  
+    margin-left: 10px; 
+}
+
+span{
+    text-decoration: underline;
+}
+
+.section__container{
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.card__kacko{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 684px;
+    height: 151px;
+    background-color: #EFF0F0;
+    border: 1px solid #EFF0F0;
+    border-radius: 25px;
+    position: relative;
+}
+
+.car__photo{
+    width: 204px;
+    height: 112px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+.umbrella{
+    width: 129px;
+    height: 119px;
+    position: absolute; 
+    left: 40px;
+}
+
+
+.kasko p:first-child{
+    font-size: 20px;
+    font-weight: 900;
+    color: #262626;
+}
+
+
+.kasko :nth-child(2){
+    font-size: 16px;
+    font-weight: 400;
+    color: #737373;
+}
+
+
+.button__r{
+    width: 188px;
+    height: 47px;
+    background-color: #CA0100;
+    border: 1px solid #CA0100;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+.osago{
+    width: 100px;
+    height: 133px;
+    position: absolute;
+    left: 5px;
+}
+
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #262626;
+}
+
+
+.polis{
+    font-size: 16px;
+    font-weight: 400;
+    color: #737373;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h3{
+    margin-bottom: 30px;
+}
+
+.advantages__electrocity-text{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.wrapper__img-text{
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+
+.advantages__electrocity-img{
+    margin-top: 100px;
+}
+
+
+.features{
+    font-size: 16px;
+    font-weight: 400;
+    color: #262626;
+}
+
+.affordable__kacko{
+    font-size: 22px;
+    font-weight: 900;
+    color: #262626;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-top: 80px;
+}
+
+.about__kacko{
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.bttn__policy{
+    width: 270px;
+    height: 65px;
+    border-radius: 6px;
+    background-color: #CA0100;
+    border: 1px solid #CA0100;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.about__kacko-card{
+    width: 446px;
+    height: 509px;
+    border-radius: 25px;
+    border: 1px solid #EFF0F0;
+    background-color: #EFF0F0;
+    padding: 41px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.img__icon{
+    width: 15px;
+    height: 15px;
+}
+
+.img__text-card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+.partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cooperators{
+    font-size: 40px;
+    font-weight: 700;
+    color: #262626;
+}
+
+
+.cooperators__card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.icon__partners{
+    width: 327px;
+    height: 133px;
+    border-radius: 10px;
+    border: 1px solid #EFF0F0;
+    background-color: #EFF0F0;
+    padding: 30px 62px;
+}
