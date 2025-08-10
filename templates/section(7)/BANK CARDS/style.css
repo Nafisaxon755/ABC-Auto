@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+.container {
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.bank__title{
+    font-family: Roboto;
+font-weight: 700;
+font-size: 40px;
+
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.signs{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.bank__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bank__cards{
+   display:grid;
+   grid-template-columns: auto auto auto auto;
+   gap: 30px;
+align-items: center;
+;
+ margin-top: 45px;
+}
+.sberbank{
+    border: 1px solid #EFF0F0;
+    border-radius: 10px;
+ padding: 50px  30px;
+ background-color: rgb(220, 219, 219) ;
+   max-width: 327px;
+    height: 133px;
+}
+.vtvbank{
+       border: 1px solid #EFF0F0;
+    border-radius: 10px;
+ padding: 50px  80px; background-color: rgb(220, 219, 219) ;max-width: 327px;height: 133px;
+}
+.alfabank{
+       border: 1px solid #EFF0F0;
+    border-radius: 10px;
+ padding: 50px  50px; background-color: rgb(220, 219, 219) ;max-width: 327px;height: 133px;
+}
+.punch__section{
+    position: relative;
+    margin-top: 50px;
+    z-index: 5;
+}
+
+.gloves__title{
+    font-family: Roboto;
+font-weight: 900;
+font-size: 30px;
+color: #FFFFFF;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+z-index: 5;
+
+
+}
+.display{
+    display: flex;
+    position: absolute;
+ top: 0;
+ align-items: center;
+}
+.gloves__subtitle{
+    font-family: Roboto;
+font-weight: 400;
+font-size: 20px;
+color: #FFFFFF;
+line-height: 100%;
+letter-spacing: 0%;
+
+
+}
+.background{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+}
+.span{
+    font-family: Roboto;
+font-weight: 700;
+font-size: 20px;
+color:#CA0100;
+line-height: 100%;
+letter-spacing: 0%;
+
+
+}
+.gloves{
+    z-index: 2;
+}
+.input{
+    display: flex;
+    margin-top: 50px;
+    gap: 38px;
+}
+input{
+        width: 369px;
+height: 65px;
+padding: 20px ;
+
+
+border-radius: 6px;
+font-family: Roboto;
+font-weight: 700;
+font-size: 16px;
+
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+text-transform: uppercase;
+align-items: center;
+
+}
+
+.h1{
+    border: 1px solid #CA0100;
+    color: #EFF0F0;
+    background-color: #CA0100;
+    width: 369px;
+height: 65px;
+padding: 20px ;
+
+
+border-radius: 6px;
+font-family: Roboto;
+font-weight: 700;
+font-size: 16px;
+
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+text-transform: uppercase;
+align-items: center;
+
+}
+.gray__subtitle{
+    font-family: Roboto;
+font-weight: 400;
+font-size: 13px;
+
+line-height: 130%;
+letter-spacing: 0%;
+color: #737373;
+margin-top: 20px;
+}
+.hidden{
+    position: relative;
+
+    display: none;
+}
+.black__fon{
+    margin-top: 20px;
+    width: 500px;
+
+}.punch__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hidden__title{
+    font-family: Roboto;
+font-weight: 900;
+font-size: 54px;
+width: 250px;
+height: 81px;
+
+opacity: 1;
+top: 211px;
+left: 20px;
+position: absolute;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+color:rgb(255, 255, 255);
+top: 350px;
+z-index: 2;
+}
+.hidden__subtitle{
+   font-family: Roboto;
+font-weight: 900;
+font-size: 20px;
+width: 490px;
+height: 81px;
+
+
+left: 20px;
+position: absolute;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+color:rgb(255, 255, 255);
+top: 600px;
+z-index: 2; 
+ 
+}
+.input2{
+            width: 420px;
+height: 65px;
+padding: 20px ;
+bottom: 250px;
+
+
+border-radius: 6px;
+font-family: Roboto;
+font-weight: 700;
+font-size: 16px;
+
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+position: absolute;
+left: 20px;
+text-transform: uppercase;
+align-items: center;
+}
+.h2{
+    border: 1px solid #CA0100;
+    color: #EFF0F0;
+    background-color: #CA0100;
+    width: 420px;
+height: 65px;
+padding: 20px ;
+
+bottom: 150px;
+left: 20px;
+border-radius: 6px;
+font-family: Roboto;
+font-weight: 700;
+font-size: 16px;
+
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+position: absolute;
+text-transform: uppercase;
+align-items: center;
+
+}
+.gray__subtitle2{
+    width: 480px;
+    position: absolute;
+    left: 20px;
+    bottom: 100px;
+      font-family: Roboto;
+font-weight: 400;
+font-size: 13px;
+
+line-height: 130%;
+letter-spacing: 0%;
+color: #737373;
+
+}
+@media (max-width:600px){
+    .bank__cards{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+    .vtvbank {
+        max-width: 250px;height: 133px;
+      
+    
+    }
+    .alfabank {
+max-width: 250px;height: 133px;
+    }
+    .sberbank{
+max-width: 250px;height: 133px;
+    }
+    .punch__section{
+        display:none;
+    }
+    .hidden{
+        display: block;
+    }
+
+}
