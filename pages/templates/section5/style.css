@@ -1,0 +1,155 @@
+.discount {
+  background-image: url('../../assets/images/1088 1.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.discount__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.discount__content {
+  flex: 1 1 500px;
+}
+
+.discount__title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.discount__description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.discount__columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.discount__column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.discount__subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.discount__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.discount__list-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.discount__list-item::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: red;
+  font-weight: bold;
+}
+
+.discount__image-wrapper {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.discount__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+@media (max-width: 992px) {
+  .discount__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .discount__image-wrapper {
+    order: -1; /* Rasm tepadan chiqadi */
+    width: 100%;
+    justify-content: center;
+  }
+
+  .discount__image {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .discount__content {
+    width: 100%;
+  }
+
+  .discount__columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .discount__title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .discount__description {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .discount__subtitle {
+    text-align: center;
+  }
+
+  .discount__list-item {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .discount {
+    padding: 30px 15px;
+  }
+
+  .discount__title {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .discount__description {
+    font-size: 14px;
+  }
+
+  .discount__subtitle {
+    font-size: 16px;
+  }
+
+  .discount__list-item {
+    font-size: 14px;
+    padding-left: 24px;
+  }
+
+  .discount__list-item::before {
+    left: 0;
+  }
+}

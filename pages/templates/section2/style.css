@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.offers {
+  padding: 40px 20px;
+}
+
+.offers__container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.offers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 390px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.card__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card__like {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #888;
+}
+
+.card__badges {
+  display: flex;
+  gap: 8px;
+}
+
+.card__badge {
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  line-height: 1.2;
+}
+
+.card__badge--red {
+  background-color: #CA0100;
+  color: #fff;
+}
+
+.card__badge--border {
+  border: 1px solid #CA0100;
+  color: #CA0100;
+}
+
+.card__gifts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__gift {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.card__image img {
+  width: 100%;
+  height: auto;
+  position: static;
+}
+
+.card__prices {
+  font-size: 16px;
+}
+
+.card__features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.card__features img {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.card__buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card__btn {
+  flex: 1;
+  padding: 10px 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+}
+
+.card__btn--red {
+  background-color: #d80000;
+}
+
+.card__btn--grey {
+  background-color: #777;
+}
+
+@media (max-width: 1200px) {
+  .offers__list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}
