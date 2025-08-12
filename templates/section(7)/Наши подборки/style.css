@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.container {
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.podborki__subtitle{
+    font-family: Roboto;
+font-weight: 400;
+font-size: 16px;
+
+line-height: 24px;
+letter-spacing: 0%;
+border: 1px solid #CA0100;
+border-radius: 15px;
+color: aliceblue;
+padding: 5px;
+background-color: #CA0100;
+
+
+}
+.podborkiwrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.podborki__title{
+    font-family: Roboto;
+font-weight: 700;
+font-size: 40px;
+
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+.write{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.podborkicard1__notes{
+    display: flex;
+    gap: px;
+    margin-left: 20px;
+    margin-top: -70px;
+}
+.podborkicard1__notes h1{
+    font-family: Roboto;
+font-weight: 700;
+font-size: 20px;
+width: 205px;
+color: #FFFFFF;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.podborkicard1__notes h2{
+        font-family: Roboto;
+font-weight: 400;
+font-size: 16px;
+width: 200px;
+line-height: 24px;
+letter-spacing: 0%;
+border: 1px solid #CA0100;
+border-radius: 8px;
+color: aliceblue;
+padding: 5px;
+background-color: #CA0100;
+text-align: center;
+}
+.displaygrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+@media(max-width:850px) {
+    
+  .displaygrid{
+        display: grid;
+      grid-template-columns: auto auto;
+        gap: 50px}
+   .img1{
+    width: 350px;
+   
+    
+   } 
+ .img{
+    width: 350px;
+   }
+   .podborkicard1__notes h2{
+    width: 100px;
+   }
+}
+@media(max-width:550px) {
+    .displaygrid{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+    }
+   .img{
+    width: 350px;
+   } 
+   .podborkiwrapper{
+    width: 150px;
+   }
+}
