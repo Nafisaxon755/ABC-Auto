@@ -350,7 +350,7 @@ margin-left: 50px;
   width:100%;
   max-width:800px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .calc-title {
@@ -894,4 +894,165 @@ margin-top: 10px;
   .car-card{
     width: 300px;
   }
+}
+
+
+.taxi-profit {
+    position: relative;
+    background-color: #262626;
+    color: #fff;
+    padding: 62px;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.taxi-profit__content {
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 30px;
+}
+
+.taxi-profit__lists-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.taxi-profit__list {
+    flex: 1 1 220px;
+}
+
+.taxi-profit__car {
+ position: absolute;
+    top: 190px;
+    left: -127px;
+    z-index: 57;
+    width: 808px;
+}
+
+.taxi-profit__title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+}
+
+.taxi-profit__lists {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.taxi-profit__label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.taxi-profit__label--green {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.taxi-profit__label--red {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.taxi-profit__subtitle {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.taxi-profit__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.taxi-profit__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #737373;
+}
+
+.taxi-profit__icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+@media (max-width: 1205px) {
+    .taxi-profit__car {
+        top: 224px;
+        left: -181px;
+        width: 765px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .taxi-profit__car {
+        top: 255px;
+        left: -190px;
+        width: 750px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .taxi-profit__car {
+        top: 255px;
+        left: -190px;
+        width: 750px;
+    }
+
+    .taxi-profit {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 865px) {
+    .taxi-profit__car {
+        display: none;
+    }
+
+    .taxi-profit__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 720px) {
+    .taxi-profit__title {
+        font-size: 35px;
+    }
+
+    .taxi-profit__subtitle {
+        font-size: 30px;
+    }
 }
