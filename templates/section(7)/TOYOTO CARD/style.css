@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+.container {
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.toyota__card-wrapper{
+ max-width: 447px;
+height: 593px;
+border: 1px solid inherit;
+border-radius: 20px;
+position: relative;
+box-shadow: 1px 1px 5px gray;
+
+}
+.toyota__title{
+font-family: Roboto;
+font-weight: 400;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+margin-top: 21px;
+margin-left: 25px;
+
+}
+
+.icon__chart{
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+  left: 342px;
+}
+.icon__like{
+       position: absolute;
+    z-index: 2;
+    top: 25px;
+  left: 387px; 
+}
+.icon__redline{
+    position: absolute;
+    z-index: 2;
+
+top: 273px;
+left: 25px;
+}
+.white__lines{
+    display: flex;
+    gap: 9px;
+    position: absolute;
+    top: 273px;
+    z-index: 2;
+    left: 105px;
+}
+.gray{
+    font-family: Roboto;
+font-weight: 400;
+font-size: 16px;
+
+line-height: 180%;
+letter-spacing: 0%;
+color: #737373;
+}
+.black{
+font-family: Roboto;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+
+line-height: 180%;
+letter-spacing: 0%;
+color: black;
+}.written__wrapper{
+    display: flex;
+    gap: 31px;
+    margin-top: 42px;
+    margin-left: 25px;
+}
+.cost{
+    font-family: Roboto;
+font-weight: 700;
+font-size: 24px;
+
+line-height: 100%;
+letter-spacing: 0%;
+margin-top: 42px;
+margin-left: 25px;
+}
+.gray__brick{
+position: absolute;
+z-index: -1;
+left: 110.6px;
+}
+.black__brick{
+    z-index: -2;
+    position: absolute;
+    left: 210px;
+}
+.bricks{
+    margin-left: 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.bricks__title , .bricks__title2 , .bricks__title3{
+    font-family: Roboto;
+font-weight: 700;
+font-size: 14px;
+position: absolute;
+
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+
+
+}
+.bricks__title{
+left: 35px;
+bottom: 30px;
+}
+.bricks__title2 {
+ left: 187px;
+   bottom: 30px;
+}
+.bricks__title3{
+    bottom: 30px;
+    right: 100px;
+}
+.display{
+    display:grid;
+ grid-template-columns: auto auto auto;
+ gap: 30px;
+    margin-top: 30px;
+
+}
+
+@media (max-width:970px) {
+.display{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.toyota__card-wrapper{
+    max-width: 400px;
+   
+}
+.toyota{
+    max-width: 400px;
+}
+.icon__chart{
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+  left: 302px;
+}
+.icon__like{
+       position: absolute;
+    z-index: 2;
+    top: 25px;
+  left: 347px; 
+}
+.bricks__title {
+    left: 35px;
+bottom: 55px;
+
+}
+.bricks__title2{
+     left: 187px;
+   bottom: 55px;
+}
+.bricks__title3{
+     bottom: 55px;
+    right: 50px;
+}
+    
+ }
+ @media(max-width:550px){
+    .display{display: grid;
+ grid-template-columns: auto ;
+}
+.toyota__card-wrapper{
+    max-width: 400px;
+}
+.bricks__title {
+    left: 35px;
+bottom: 55px;
+
+}
+.bricks__title2{
+     left: 187px;
+   bottom: 55px;
+}
+.bricks__title3{
+     bottom: 55px;
+    right: 50px;
+}
+
+ }
+ 
