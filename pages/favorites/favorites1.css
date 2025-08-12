@@ -99,6 +99,21 @@ a {
   gap: 32px;
   margin-bottom: 30px;
 }
+
+/* .newcars__card-wrapper1 {
+  margin-bottom: 30px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+/* .newcars__card-wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 30px;
+} */
+
 .newcars__card-wrapper2 {
   display: flex;
   gap: 32px;
@@ -257,6 +272,10 @@ a {
   .newcars__card-wrapper1 .newcars__card:last-child {
     display: none;
   }
+
+  /* .newcars__card-wrapper1 {
+    grid-template-columns: repeat(2, 1fr);
+  } */
   .newcars__card {
     padding: 20px 20px 140px;
   }
